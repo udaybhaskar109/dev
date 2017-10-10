@@ -1,0 +1,36 @@
+Ansible playbook through Jenkins
+--------------------------------
+
+install ansible and ansible playbook/.yml in EC2
+
+Jenkins-
+
+Required publins -
+	ssh
+	Ansible
+
+Credentials
+	create username and password with ssh
+	copy n paste the key file in ssh credentials
+
+configuration-
+	ssh sites-
+		Hostname
+		root
+		portnumber
+		credentials
+		
+Select the created job
+	cofigure
+		poll SCM
+		SSH-agent
+		
+	Post steps
+		inoke Ansible Playbook
+			Ansible installation
+			playbook path /var/lib/jenkins/workspace/---
+			inventory
+			credentials
+
+
+ 
