@@ -1,0 +1,24 @@
+php  Appl
+------------
+install httpd,mariadb-server,mariadb,php,php-mysql,php-pdo,git,phpMyAdmin,epel-release
+cd /var/www/html
+git clone url
+
+vi db.properties
+<?php>
+ db name
+ host
+ username
+ passwd
+ port
+
+ create a database
+ 
+ .sql file dump into db ( to change the upload size of .sql file goto /etc/php.ini config )
+ 
+ index.php file in /var/www/html
+ 
+ browse ip 
+ 
+----end----- 
+
